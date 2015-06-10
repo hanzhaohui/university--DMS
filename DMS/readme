@@ -1,0 +1,27 @@
+【项目名称】
+	DMS数据采集
+
+【项目环境】
+	[oracle@localhost ddd]$ cat /proc/version 
+	Linux version 2.6.32-279.el6.i686 (mockbuild@x86-010.build.bos.redhat.com) (gcc version 4.4.6 20120305 (Red Hat 4.4.6-4) (GCC) ) #1 SMP Wed Jun 13 18:23:32 EDT 2012
+	[oracle@localhost ~]$ qmake -v
+	QMake version 2.01a
+	Using Qt version 4.6.2 in /usr/lib
+
+【项目运行】
+	1.客户端不涉及qt的程序执行：
+		客户端：
+			(1)cd client
+			(2)g++ testdmsclient.cpp longreader.cpp longsender.cpp
+		服务器端：
+				g++ dmsserver.cpp -lpthread
+	2.客户端涉及qt：
+		客户端：
+			(1)cd client/dms
+			(2)qmake
+			(3)make
+
+【其他】	
+	dmsui只是一个关于qt的例子，跟DMS项目本身无关。
+	编译方式：
+		1.qmake	2.make
