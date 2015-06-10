@@ -1,5 +1,5 @@
 【项目名称】
-	DMS数据采集
+	linux环境下，DMS数据采集
 
 【项目环境】
 	[oracle@localhost ddd]$ cat /proc/version 
